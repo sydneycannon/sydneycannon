@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title class="ribbon">
+   <strong class="ribbon-content">My Favorite Movies</strong>
+</title>
+    <meta charset="UTF-8">
+  <style>
+      .ribbon {
+ font-size: 16px !important;
+ width: 50%;
+    
+ position: relative;
+ background: #ba89b6;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; 
+ margin: 2em auto 3em; 
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid ,mediumpurple;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: mediumpurple transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+    body { font-family: Arial, sans-serif; padding: 20px; }
+
+    table { width: 100%; border-collapse: collapse; }
+    th { background: #333; color: white; padding: 10px; }
+    td { padding: 10px; border: 1px solid #ccc; text-align: center; }
+    td img { width: 80px; height: 60px; object-fit: cover; }
+
+    tr.row1 { background-color: #fde8e8; }
+    tr.row2 { background-color: #fef3cd; }
+    tr.row3 { background-color: #d4edda; }
+    tr.row4 { background-color: #cce5ff; }
+    tr.row5 { background-color: #e2d9f3; }
+    tr.row6 { background-color: #fde2f3; }
+
+    .snippet { background: #1e1e1e; color: #9cdcfe; font-family: monospace; padding: 16px; margin-top: 20px; }
+    .back-to-top { display: inline-block; margin-top: 20px; padding: 8px 16px; background: #333; color: white; text-decoration: none; }
+    footer { margin-top: 30px; text-align: center; color: #666; }
+  </style>
+</head>
+<body>
+
+  <a id="top"></a>
+
+  <nav>
+    <a href="tables.html">My Favorite TV Shows</a> 
+  </nav>
+
+  <h1>My Favorite Movies</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Favorite Character</th>
+        <th>Favorite Scene</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="row1"><td><img src="miracle.jpg" alt=""></td><td>Jack O'Callahan</td><td></td></tr>
+      <tr class="row2"><td><img src="10 things.jpg" alt=""></td><td>Patrick Verona</td><td></td></tr>
+      <tr class="row3"><td><img src="the longest ride.jpg" alt=""></td><td>Luke Collins</td><td></td></tr>
+      <tr class="row4"><td><img src="bosbas.jpg" alt=""></td><td>President Snow</td><td></td></tr>
+      <tr class="row5"><td><img src="good will hunting.jpg" alt=""></td><td>Will Hunting</td><td></td></tr>
+      <tr class="row6"><td><img src="topgunmav.jpg" alt=""></td><td>Pete Mitchell</td><td></td></tr>
+    </tbody>
+  </table>
+
+  <a class="back-to-top" href="#top">↑ Return to Top</a>
+
+  <footer>&copy; 2025 My Website</footer>
+
+</body>
+</html>
