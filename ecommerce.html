@@ -71,9 +71,11 @@
             border-radius: 5px;
         }
         .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    justify-items: center;
+    margin-top: 20px;
 }
 
 .card {
@@ -174,7 +176,7 @@
       </div>
     </div>
  
-    <div class="thumb-card">
+    <div class="card">
       <a href="solimar 2.html">
         <img src="images/solimar 2 shoe.jpeg" alt="Hoka Solimar 2" width="220" height="160"/>
         <div class="thumb-overlay"><span>View Full Size </span></div>
