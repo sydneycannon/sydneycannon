@@ -18,15 +18,28 @@
             color: #333;
             font-weight: bold;
         }
+            
+   .banner {
+       position: fixed;
+       top: 0;
+    width: 100%;
+        }
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+        }
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #purple;
+            background-color: #e6ccff;
             text-align: center;
+             margin-top: 150px;
         }
 
         header {
-            background: linear-gradient(to right, red, blue);
+            background: purple;
             color: white;
             padding: 40px;
         }
@@ -54,7 +67,9 @@
 </head>
 
 <body>
-
+<div class="banner">
+    <img src="images/CLOUD STRIDE.CO.jpg" alt="CloudStrike Banner">
+</div>
 <header>
     <h1>CloudStride.Co</h1>
     <p>Browse your favorite shoes. Click any thumbnail to view your shoe and its description.</p>
@@ -62,7 +77,6 @@
     
     <div class="section-header">
     <h2>Featured Hoka Shoe Thumbnails</h2>
-    <span>— 6 Styles</span>
   </div>
 
   <main class="thumbnails">
