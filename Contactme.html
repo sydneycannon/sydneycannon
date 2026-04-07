@@ -28,7 +28,7 @@
             background: purple;
             color: white;
             padding: 20px;
-    font-size: 50;
+            font-size: 50;
         }
         body {
             font-family: Arial;
@@ -38,7 +38,7 @@
 
         a {
             text-decoration: none;
-            background-color: #0a1f44;
+            background-color: purple
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -61,6 +61,27 @@
       display: block;
       filter: sepia(0.15) contrast(0.9);
     }
+   .card {
+    background-color: white;
+    border: 3px solid purple;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 5px 5px 15px gray;
+    transition: transform 0.2s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 250px;     
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 200px;
+    height: 150px;
+}
     </style>
 
 </head>
@@ -69,6 +90,7 @@
 
 <header>Contact Me for Prices</header>
 
+   <div class="card">
 <p><strong>Name:</strong> Sydney Cannon</p>
 <p><strong>Email:</strong> hokashoes@resale.com</p>
 <p><strong>Phone:</strong> (405) 555-1234</p>
@@ -85,7 +107,7 @@
 <br><br>
 
 <a href="ecommerce.html">Back to Home</a>
-
+  </div>
 </body>
 </html>
   
