@@ -65,8 +65,8 @@
     background-color: white;
     border: 3px solid purple;
     border-radius: 10px;
-    padding: 10px;
-    margin: 15px;
+    padding: 20px;
+    margin: 30px;
     box-shadow: 5px 5px 15px gray;
     transition: transform 0.2s;
 
@@ -74,14 +74,37 @@
     flex-direction: column;
     align-items: center;
 
-    width: 250px;     
+    width: 80%;
+     max-width: 700px
     box-sizing: border-box;
 }
+.card iframe {
+      width: 100%;        
+      height: 400px;
+      border: 0;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+ .card p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
 
-.card img {
-    width: 200px;
-    height: 150px;
-}
+    .card a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: purple;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background-color: darkmagenta;
+    }
     </style>
 
 </head>
@@ -99,9 +122,6 @@
 <h2>Location</h2>
 
 <iframe src="https://www.google.com/maps?q=Gaylord+College+of+Journalism+and+Mass+Communication+OU&output=embed">
-    width= "600"
-    height="450" 
-    style= "border: 0;""
 </iframe>
    
 <br><br>
